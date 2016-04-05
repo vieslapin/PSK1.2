@@ -53,7 +53,6 @@ public class Student implements Serializable {
     @Column(name = "REGISTRATION_NO")
     private String registrationNo;
     @Column(name = "OPT_LOCK_VERSION")
-    
     private Integer optLockVersion;
     @JoinTable(name = "STUDENT_COURSE", joinColumns = {
         @JoinColumn(name = "STUDENT_ID", referencedColumnName = "ID")}, inverseJoinColumns = {
