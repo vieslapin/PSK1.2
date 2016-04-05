@@ -45,7 +45,7 @@ public class Course implements Serializable {
     private Integer optLockVersion;
     @ManyToMany(mappedBy = "courseList")
     private List<Student> studentList;
-
+    //komentarz
     public Course() {
     }
 
