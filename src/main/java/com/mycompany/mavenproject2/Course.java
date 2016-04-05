@@ -42,6 +42,7 @@ public class Course implements Serializable {
     @Column(name = "NAME")
     private String name;
     @Column(name = "OPT_LOCK_VERSION")
+    
     private Integer optLockVersion;
     @ManyToMany(mappedBy = "courseList")
     private List<Student> studentList;
