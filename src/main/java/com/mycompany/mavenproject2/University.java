@@ -41,6 +41,7 @@ public class University implements Serializable {
     @Size(max = 50)
     @Column(name = "TITLE")
     private String title;
+    
     @Column(name = "OPT_LOCK_VERSION")
     private Integer optLockVersion;
     @OneToMany(mappedBy = "universityId")

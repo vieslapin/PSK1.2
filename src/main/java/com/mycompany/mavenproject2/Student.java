@@ -52,6 +52,7 @@ public class Student implements Serializable {
     @Size(max = 20)
     @Column(name = "REGISTRATION_NO")
     private String registrationNo;
+    
     @Column(name = "OPT_LOCK_VERSION")
     private Integer optLockVersion;
     @JoinTable(name = "STUDENT_COURSE", joinColumns = {
