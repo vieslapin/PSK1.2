@@ -17,6 +17,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.persistence.Version;
 import javax.validation.constraints.Size;
 
 /**
@@ -41,7 +42,7 @@ public class Course implements Serializable {
     @Size(max = 50)
     @Column(name = "NAME")
     private String name;
-    
+    @Version
     @Column(name = "OPT_LOCK_VERSION")
     private Integer optLockVersion;
     @ManyToMany(mappedBy = "courseList")

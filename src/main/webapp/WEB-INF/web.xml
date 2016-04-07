@@ -26,7 +26,7 @@
         <class-name>org.apache.derby.jdbc.ClientXADataSource</class-name>
         <server-name>localhost</server-name>
         <port-number>1527</port-number>
-        <database-name>StudentsDB</database-name>
+        <database-name>studentsDB</database-name>
         <user>APP</user>
         <password>APP</password>
         <property>
